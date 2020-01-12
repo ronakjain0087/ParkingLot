@@ -5,19 +5,27 @@ package com.gojek.parkinglot.service.impl;
 
 import java.util.Optional;
 
+import com.gojek.parkinglot.dao.InMemoryParkingDataManager;
 import com.gojek.parkinglot.exceptions.GoJekParkingException;
 import com.gojek.parkinglot.models.Vehicle;
 import com.gojek.parkinglot.service.ParkingLotService;
+import com.gojek.parkinglot.utils.ErrorCodeEnum;
 
 /**
  * @author rkala
  *
  */
 public class ParkingLotServiceImpl implements ParkingLotService {
+	
+	private InMemoryParkingDataManager daoManager;
 
 	@Override
-	public void createParkingLot(int level, int intialCapacity) throws GoJekParkingException {
-		// TODO Auto-generated method stub
+	public void createParkingLot(int level, int intialCapacity) throws GoJekParkingException {	
+		// If parking lot is already created then throw exception	
+		if(daoManager != null) {
+			throw new GoJekParkingException(ErrorCodeEnum.PARKING_LOT_ALREADY_EXIST.getDescription());
+		}
+		
 		
 	}
 

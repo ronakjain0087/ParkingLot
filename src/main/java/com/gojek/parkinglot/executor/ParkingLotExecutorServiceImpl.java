@@ -10,8 +10,8 @@ import com.gojek.parkinglot.utils.CommonConstants;
 import com.gojek.parkinglot.utils.ErrorCodeEnum;
 
 /**
- * @author rkala
- *
+ * @author rkala This class handles all actions that can be performed for a
+ *         parking lot
  */
 public class ParkingLotExecutorServiceImpl implements ParkingLotExecutorService {
 
@@ -55,8 +55,8 @@ public class ParkingLotExecutorServiceImpl implements ParkingLotExecutorService 
 		case CommonConstants.STATUS:
 			parkingLotService.getStatus(level);
 			break;
-			
-		// Enquiry cases	
+
+		// Enquiry cases
 		case CommonConstants.REG_NUMBER_BY_COLOR:
 			parkingLotService.getRegNumber(level, inputs[1]);
 			break;
