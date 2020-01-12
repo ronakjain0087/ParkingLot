@@ -1,3 +1,4 @@
+package com.gojek.parkinglot.dao;
 import java.util.List;
 
 import com.gojek.parkinglot.models.Vehicle;

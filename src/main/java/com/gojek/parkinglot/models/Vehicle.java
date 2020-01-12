@@ -13,7 +13,15 @@ import org.apache.commons.lang3.builder.ToStringStyle;
 public abstract class Vehicle {
 
 	private String registrationNo;
-	private String color ;
+	private String color;
+
+	public Vehicle(String regNo, String color) {
+		this.registrationNo = regNo;
+		this.color = color;
+	}
+
+	public Vehicle() {
+	}
 
 	public String getRegistrationNo() {
 		return registrationNo;
@@ -30,10 +38,10 @@ public abstract class Vehicle {
 	public void setColor(String color) {
 		this.color = color;
 	}
-	
+
 	@Override
 	public String toString() {
-	    return ToStringBuilder.reflectionToString(this, ToStringStyle.JSON_STYLE);
+		return ToStringBuilder.reflectionToString(this, ToStringStyle.JSON_STYLE);
 	}
 
 }
