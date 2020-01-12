@@ -12,7 +12,7 @@ import com.gojek.parkinglot.models.Vehicle;
  */
 public interface InMemoryParkingDataManager<T extends Vehicle> {
 
-	public int parkCar(int level, T vehicle);
+	public int parkVehicle(int level, T vehicle);
 
 	public boolean leaveVehicle(int level, int slotNumber);
 
