@@ -3,7 +3,7 @@
  */
 package com.gojek.parkinglot.executor;
 
-import com.gojek.parkinglot.exceptions.ParkingException;
+import com.gojek.parkinglot.exceptions.GoJekParkingException;
 import com.gojek.parkinglot.service.ParkingLotService;
 
 /**
@@ -14,6 +14,6 @@ public interface ParkingLotExecutorService {
 	
 	public void attachService(ParkingLotService service);
 	
-	public void peform(String action) throws ParkingException;
+	public void executeAction(String action) throws GoJekParkingException;
 
 }

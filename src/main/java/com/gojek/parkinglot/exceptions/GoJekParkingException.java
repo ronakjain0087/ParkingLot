@@ -7,7 +7,7 @@ package com.gojek.parkinglot.exceptions;
  * @author rkala
  *
  */
-public class ParkingException extends Exception {
+public class GoJekParkingException extends Exception {
 
 	/**
 	 * 
@@ -18,21 +18,21 @@ public class ParkingException extends Exception {
 	 * @param message
 	 * @param throwable
 	 */
-	public ParkingException(String message, Throwable throwable) {
+	public GoJekParkingException(String message, Throwable throwable) {
 		super(message, throwable);
 	}
 
 	/**
 	 * @param message
 	 */
-	public ParkingException(String message) {
+	public GoJekParkingException(String message) {
 		super(message);
 	}
 
 	/**
 	 * @param throwable
 	 */
-	public ParkingException(Throwable throwable) {
+	public GoJekParkingException(Throwable throwable) {
 		super(throwable);
 	}
 
