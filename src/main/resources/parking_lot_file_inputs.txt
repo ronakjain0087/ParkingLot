@@ -1,0 +1,15 @@
+create_parking_lot 6
+park TN-01-HQ-1234 White
+park TN-01-HK-9999 White
+park TN-01-TB-0001 Black
+park TN-01-HU-7777 Red
+park TN-01-HQ-2701 Blue
+park TN-01-HA-3141 Black
+leave 4
+status
+park TN-01-P-333 White
+park TN-12-AA-999 White
+registration_numbers_for_cars_with_colour White
+slot_numbers_for_cars_with_colour White
+slot_number_for_registration_number TN-01-HA-3141
+slot_number_for_registration_number DL-04-AY-1111
