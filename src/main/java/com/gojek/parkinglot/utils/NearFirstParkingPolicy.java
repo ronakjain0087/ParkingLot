@@ -18,21 +18,21 @@ public class NearFirstParkingPolicy implements ParkingPolicy {
 	}
 
 	@Override
-	public void add(int i) {
-		// TODO Auto-generated method stub
-
+	public void add(int i)
+	{
+		availableSlots.add(i);
 	}
-
+	
 	@Override
-	public int getSlot() {
-		// TODO Auto-generated method stub
-		return 0;
+	public int getSlot()
+	{
+		return availableSlots.first();
 	}
-
+	
 	@Override
-	public void removeSlot(int slot) {
-		// TODO Auto-generated method stub
-
+	public void removeSlot(int availableSlot)
+	{
+		availableSlots.remove(availableSlot);
 	}
 
 }

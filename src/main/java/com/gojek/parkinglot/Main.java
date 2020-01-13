@@ -136,7 +136,7 @@ public class Main
 		buffer = buffer.append("A) Create a parking lot of size n               ---> create_parking_lot {capacity}")
 				.append("\n");
 		buffer = buffer
-				.append("B)  Park a car                                    ---> park <<car_number>> {car_clour}")
+				.append("B)  Park a car                                    ---> park {car_number} {car_clour}")
 				.append("\n");
 		buffer = buffer.append("C) Unpark car from parking lot                ---> leave {slot_number}")
 				.append("\n");
