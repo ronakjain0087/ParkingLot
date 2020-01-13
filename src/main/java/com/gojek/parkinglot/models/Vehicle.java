@@ -3,6 +3,11 @@
  */
 package com.gojek.parkinglot.models;
 
+import java.io.Externalizable;
+import java.io.IOException;
+import java.io.ObjectInput;
+import java.io.ObjectOutput;
+
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
@@ -10,7 +15,7 @@ import org.apache.commons.lang3.builder.ToStringStyle;
  * @author rkala
  *
  */
-public abstract class Vehicle {
+public abstract class Vehicle implements Externalizable {
 
 	private String registrationNo;
 	private String color;
@@ -37,6 +42,18 @@ public abstract class Vehicle {
 
 	public void setColor(String color) {
 		this.color = color;
+	}
+
+	@Override
+	public void writeExternal(ObjectOutput out) throws IOException {
+		out.writeObject(getRegistrationNo());
+		out.writeObject(getColor());
+	}
+
+	@Override
+	public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
+		setRegistrationNo((String) in.readObject());
+		setColor((String) in.readObject());
 	}
 
 	@Override

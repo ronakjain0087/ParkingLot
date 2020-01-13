@@ -21,6 +21,9 @@ public class CommonConstants {
 	public static final String REG_NUMBER_BY_COLOR = "registration_number_by_colour";
 	public static final String SLOT_NUMBER_BY_COLOR = "slot_number_by_colour";
 	public static final String SLOTS_NUMBER_BY_REG_NUMBER = "slot_number_by_registration_number";
+	
+	public static String PARKING_LOT_INITIALISED_MSG = "Parking lot initialsied with {variable} slots";
+
 
 	
 }
