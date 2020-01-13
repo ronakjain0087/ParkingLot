@@ -15,7 +15,7 @@ public class CommonConstants {
 	public static final int NOT_FOUND = -1;
 
 	public static final String CREATE_PARKING_LOT = "create_parking_lot";
-	public static final String PARK_VEHICLE = "park_vehicle";
+	public static final String PARK_VEHICLE = "park";
 	public static final String LEAVE = "leave";
 	public static final String STATUS = "status";
 	public static final String REG_NUMBER_BY_COLOR = "registration_number_by_colour";
